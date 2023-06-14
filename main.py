@@ -7,10 +7,6 @@ import pandas as pd
 app = Flask(__name__)
 
 
-@app.route("/<name>")
-def hello(name):
-    return f"Hello, {escape(name)}!"
-
 
 @app.route('/recognize', methods=['POST', 'GET'])
 def login():
